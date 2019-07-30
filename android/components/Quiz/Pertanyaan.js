@@ -9,7 +9,7 @@ const Pertanyaan = ({dataSoal, soalSekarang, panjangSoal}) =>{
                 <Text>{soalSekarang+1} OF {panjangSoal}</Text>
                 <Text>Multiple Choice</Text>
             </View>
-            <View style={{flex:2, width:'90%', backgroundColor:'cyan', height:'100%', justifyContent:'center' }}>
+            <View style={{flex:2, width:'90%', height:'100%', justifyContent:'center' }}>
             <Text style={{fontWeight: 'bold', fontSize: 18}}>{dataSoal.question}</Text>
             </View>
         </View>

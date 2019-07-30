@@ -6,7 +6,7 @@ import DaftarJawaban from './DaftarJawaban'
 
 const KotakKuis = ({dataSoal, handleClick, soalSekarang, panjangSoal})=>{
     return(
-        <View style={{flex:8,backgroundColor:'pink', alignItems:'center'}}>
+        <View style={{flex:8, alignItems:'center'}}>
             <Pertanyaan dataSoal={dataSoal} soalSekarang={soalSekarang} panjangSoal={panjangSoal}/>
             <DaftarJawaban dataSoal={dataSoal} handleClick={handleClick} />
         </View>

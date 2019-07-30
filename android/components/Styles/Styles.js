@@ -22,6 +22,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center'
     },
+    QuizButtonEnd:{
+        marginTop:10, 
+        alignItems:'center', 
+        justifyContent:'center', 
+        padding:20, 
+        borderColor:'green', 
+        borderWidth:1, 
+        borderRadius:10
+    }
 });
 
 export default styles

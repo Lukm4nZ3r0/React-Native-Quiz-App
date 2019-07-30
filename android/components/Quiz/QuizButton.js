@@ -1,5 +1,5 @@
 import React from 'react'
-import {View,TouchableHighlight,Text} from 'react-native'
+import {View,TouchableOpacity,Text} from 'react-native'
 
 const QuizButton = ({current, dataSoal, multiStepButton, gantiSceneSoalFalse}) =>{
     let PanjangSoal = dataSoal.length
@@ -8,9 +8,9 @@ const QuizButton = ({current, dataSoal, multiStepButton, gantiSceneSoalFalse}) =
     PrevButton = () =>{
         if(SoalSaatIni>0){
             return(
-                <TouchableHighlight style={{flex: 1,alignItems: 'center',justifyContent: 'center'}}  onPress={() => multiStepButton(current-1)}>
+                <TouchableOpacity style={{flex: 1,alignItems: 'center',justifyContent: 'center'}}  onPress={() => multiStepButton(current-1)}>
                     <Text>Prev</Text>
-                </TouchableHighlight>
+                </TouchableOpacity>
             )
         }
         else{
@@ -23,16 +23,16 @@ const QuizButton = ({current, dataSoal, multiStepButton, gantiSceneSoalFalse}) =
     NextButton = () =>{
         if(SoalSaatIni<PanjangSoal-1){
             return(
-                <TouchableHighlight style={{flex: 1,alignItems: 'center',justifyContent: 'center'}} onPress={() => multiStepButton(current+1)}>
+                <TouchableOpacity style={{flex: 1,alignItems: 'center',justifyContent: 'center'}} onPress={() => multiStepButton(current+1)}>
                     <Text>Next</Text>
-                </TouchableHighlight>
+                </TouchableOpacity>
             )
         }
         else{
             return(
-                <TouchableHighlight style={{flex: 1,alignItems: 'center',justifyContent: 'center'}}  onPress={() => gantiSceneSoalFalse()}>
+                <TouchableOpacity style={{flex: 1,alignItems: 'center',justifyContent: 'center'}}  onPress={() => gantiSceneSoalFalse()}>
                     <Text>Selesai</Text>
-                </TouchableHighlight>
+                </TouchableOpacity>
             )
         }
     }
