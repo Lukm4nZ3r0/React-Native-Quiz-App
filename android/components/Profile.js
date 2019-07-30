@@ -13,9 +13,6 @@ export default class Profile extends Component{
     render(){
         return(
             <View style={{flex:1, backgroundColor:'blue'}}>
-                <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
-                    <Text>Profile Screen</Text>
-                </View>
                 <View style={{flex:3, justifyContent:'center', alignItems:'center'}}>
                     <FotoProfile />
                 </View>
