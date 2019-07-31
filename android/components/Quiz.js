@@ -48,7 +48,7 @@ export default class Quiz extends Component{
 
     gantiSceneSoalTrue = () =>{
         let copySoal = JSON.parse(JSON.stringify(this.state.soal))
-        for(let i=0;i<this.state.soal.length-1;i++){
+        for(let i=0;i<this.state.soal.length;i++){
             copySoal[i].answers.answer_selected = ''
             copySoal[i].clicked = false
         }
